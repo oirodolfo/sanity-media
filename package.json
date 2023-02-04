@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "format": "npx prettier --write . --ignore-path .gitignore",
+    "lint": "next lint -- --ignore-path .gitignore",
+    "lint:fix": "npm run format && npm run lint -- --fix",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@portabletext/react": "^2.0.0",
+    "@portabletext/to-html": "^1.0.4",
+    "@sanity/demo": "^1.0.0",
+    "@sanity/image-url": "^1.0.1",
+    "@sanity/scheduled-publishing": "0.3.0-v3-studio.11",
+    "@sanity/vision": "3.0.0-rc.2",
+    "@sanity/webhook": "^2.0.0",
+    "@tailwindcss/typography": "^0.5.8",
+    "classnames": "^2.3.2",
+    "cookies-next": "^2.1.1",
+    "date-fns": "^2.29.3",
+    "mjml": "^4.13.0",
+    "mjml-browser": "^4.13.0",
+    "next": "^13.0.4",
+    "next-sanity": "^2.1.0",
+    "next-seo": "^5.14.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-is": "^18.2.0",
+    "react-player": "^2.11.0",
+    "sanity": "3.0.0-rc.2",
+    "sanity-plugin-asset-source-unsplash": "3.0.0-v3-studio.13",
+    "sanity-plugin-documents-pane": "^2.0.0-v3-studio.5",
+    "sanity-plugin-media": "^2.0.0-v3-studio.3",
+    "sanity-plugin-workflow": "file:.yalc/sanity-plugin-workflow",
+    "styled-components": "^5.3.6",
+    "twig": "^1.15.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/twig": "^1.12.9",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.2",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.2",
+    "typescript": "^4.8.4"
+  }
+}
